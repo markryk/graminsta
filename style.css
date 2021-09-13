@@ -1,0 +1,44 @@
+article#full_area {
+	width: 935px;
+	height: 618px;
+	margin: auto;
+	border: dashed 1px black;
+}
+div#image {
+	width: 454px;
+	height: 618px;
+	float: left;
+	margin-left: 50px;
+	border: dotted 1px orange;
+}
+div#login_area_master {
+	width: 350px;
+	height: 606px;
+	border: solid 1px black;
+	float: right;
+	display: table;
+}
+div#login_area {
+	margin-top: 20px;
+	width: 348px;
+	height: 358px;
+	border: dotted 1px blue;
+}
+
+div#new_user_area {
+	margin-top: 10px;
+	width: 348px;
+	height: 41px;
+	border: dotted 1px darkred;
+}
+div#stores_area {
+	width: 350px;
+	height: 102px;
+	margin-top: 10px;
+	border: dotted 1px green;
+}
+footer {
+	width: 1317px;
+	height: 151px;
+	background-color: brown;
+}
