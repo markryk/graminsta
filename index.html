@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>GramInsta</title>
 </head>
@@ -13,18 +13,39 @@
 		</div>
 		<div id="login_area_master">
 			<div id="login_area">
-				
+				<h1>GramInsta</h1>
+				<form method="POST" action="#">
+					<label for="user_name"></label>
+					<input type="text" name="username" id="user_name" placeholder="Telefone, nome de usuário ou email">
+					<br>
+					<label for="user_pwd"></label>
+					<input type="password" name="usercpf" id="user_pwd" placeholder="Senha">
+					<input type="submit" name="btnlogin" id="btn_login" value="Entrar">
+				</form>
+				<div>
+					<a href="https://www.facebook.com" class="link" target="_blank"><i class="fab fa-facebook-square"></i>&nbsp;Entrar com o Facebook</a>
+					<br>
+					<a href="#" class="link2">Esqueceu a senha</a>
+				</div>
 			</div>
 			<div id="new_user_area">
-			
+				<p>Não tem uma conta?<a href="#" class="link">Cadastre-se</a></p>
 			</div>
 			<div id="stores_area">
-				
+				<p> Obtenha o aplicativo </p>
+				<i class="fab fa-apple"></i>
+				<i class="fab fa-google-play"></i>
 			</div>
 		</div>
 	</article>
 	<footer>
-		
+		<p> &copy; <span id="year" onload="getFullYear();"></span> GramInsta by <a href="https://github.com/markryk" class="MarkRyk">MarkRyk</a></p>
 	</footer>
+	<script src="https://kit.fontawesome.com/94abebda83.js" crossorigin="anonymous"></script>
+	<script>
+		const d = new Date();
+		document.getElementById("year").innerHTML = d.getFullYear();
+	</script>
+
 </body>
 </html>
